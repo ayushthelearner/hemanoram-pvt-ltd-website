@@ -17,7 +17,7 @@ app.listen(3000,()=>{
     console.log("server is started");
 })
 
-app.get("/home",(req,res)=>{
+app.get("/",(req,res)=>{
     res.render("listings/home.ejs");
 })
 
@@ -28,6 +28,6 @@ app.get("/whatwedo",(req,res)=>{
 app.get("/rangeofservices",(req,res)=>{
     res.render("listings/rangeofservices.ejs")
 })
-app.get("/contactus",(req,res)=>{
-    res.render("listings/contactus.ejs")
+app.get("/esteemed-partners",(req,res)=>{
+    res.render("listings/esteemed-partners.ejs")
 })
